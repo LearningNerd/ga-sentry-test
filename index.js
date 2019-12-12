@@ -10,7 +10,7 @@ runAction().catch( error => {
 async function runAction() {
 
   // Can I leave this out? how to do this with sentryCli?
-  const tag = "sentrycli-test-release1";
+  const tag = "sentrycli-test-release222";
 
   // This input is defined in action.yml and its value is provided by users of this Action in their own workflow files
   const environment = core.getInput('environment');
