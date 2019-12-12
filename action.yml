@@ -1,0 +1,10 @@
+name: 'Sentry release action test'
+description: 'test Sentry release'
+inputs:
+  environment:
+    description: 'Deploy environment to associate with release'
+    default: ''
+runs:
+  using: 'node12'
+  main: 'index.js'
+
