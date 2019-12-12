@@ -20,14 +20,7 @@ async function runAction() {
 
   const sentryCli = new SentryCli();
 
-//  await sentryCli.releases.new(tag);
-
-    await sentryCli.execute([
-        "releases",
-        "new",
-        tag
-    ]);
-
+  await sentryCli.releases.new(tag);
 
   console.log(sentryCli.releases);
 
@@ -40,6 +33,6 @@ async function runAction() {
 */
 
   // Finalize the release
-  // await sentryCli.releases.finalize(tag);
+  await sentryCli.releases.finalize(tag);
 }
 
